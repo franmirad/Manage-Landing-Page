@@ -1,0 +1,76 @@
+/* ----- Burger menu styling ----- */
+.burger-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu-bar-1,
+.burger-menu-bar-2,
+.burger-menu-bar-3 {
+  width: 35px;
+  height: 5px;
+  background: var(--DarkBlue);
+  margin: 6px 0;
+  transition: 400ms;
+}
+
+.change .burger-menu-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .burger-menu-bar-2 {
+  opacity: 0;
+}
+
+.change .burger-menu-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* ----- Sidenav ----- */
+.sidenav {
+  height: 0;
+  min-width: 80%;
+  max-width: 80%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  top: 90px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 24px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--DarkBlue);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--BrightRed);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.lock-scroll {
+  overflow-y: hidden;
+}

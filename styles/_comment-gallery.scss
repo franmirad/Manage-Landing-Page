@@ -1,0 +1,40 @@
+.comments-slider {
+	position: relative;
+	margin-top: 100px;
+}
+
+.comments-gallery {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: repeat(4, 500px);
+	grid-gap: 20px;
+	overflow: hidden;
+	column-gap: 200px;
+	padding: 0 100px 0 100px;
+}
+
+.comment-card {
+	pointer-events: none;
+}
+
+@media (max-width: 768px) {
+	.comments-gallery {
+		column-gap: 0;
+		padding: 0 30px 0 30px;
+	}
+
+	.comment-card {
+		max-width: 400px;
+
+	}
+}
+
+@media (max-width: 500px) {
+
+	.comment-card {
+		max-width: 280px;
+
+	}
+}
